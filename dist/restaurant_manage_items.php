@@ -1,3 +1,14 @@
+<?php
+
+ob_start();
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,10 +52,6 @@
 
 
 
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
-
-
                              //Remove spaces, slashes and prevent XSS
                                 function test_input($data) {
                                   $data = trim($data);
@@ -66,7 +73,7 @@
                                                        
                                    // echo $followingdata['restaurantname'];
 
-                                    mysqli_close($GLOBALS["con"]);
+                                  //  mysqli_close($GLOBALS["con"]);
                             }
 
 
@@ -178,11 +185,7 @@
                         }
                    }
 
-                   
-
-
-                           $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
+                  
 
                         
                         //Check for DB Connection
@@ -197,7 +200,7 @@
                                 if($boolean) {
                                    updateData($resID,$resName);
                                 }
-                            mysqli_close($GLOBALS["con"]);
+                            //mysqli_close($GLOBALS["con"]);
                             $boolean = false;
                            }
 
@@ -354,8 +357,6 @@
 
                                                      
                                                      //define('MYSQL_ASSOC',MYSQLI_ASSOC);
-                                                     $dbname = "starvelater";
-                                                     $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                                                      //Check for DB Connection
                                                      if(!$con){
@@ -598,7 +599,7 @@
                                                        }//closing Available Products block
                                                      }//Closing While Loop
 
-                                                     mysqli_close($GLOBALS["con"]);
+                                                     //mysqli_close($GLOBALS["con"]);
                                                   }//CLosing Database Connection Else Block
 
                                                 ?> 
@@ -766,3 +767,9 @@
 
     </body>
 </html>
+
+<?php 
+
+ob_flush();
+
+?>

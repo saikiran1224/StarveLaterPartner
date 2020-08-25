@@ -1,3 +1,13 @@
+<?php 
+
+require("connect.php");
+
+$con = getConn();
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -36,8 +46,7 @@
                           session_start();
                           //echo $_SESSION['email'];
 
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
+                            
     
                             //Check for DB Connection
                             if(!$con){
@@ -97,8 +106,6 @@ function getOrderDetails($Order_Id){
 
 
                 
-                    $dbname = "starvelater";
-                    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                     //Check for DB Connection
                     if(!$con){
@@ -253,8 +260,6 @@ function getOrderDetails($Order_Id){
                                              
                                              <?php 
                                                    
-                                                   $dbname = "starvelater";
-                                                     $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                                                      //Check for DB Connection
                                                      if(!$con){

@@ -1,3 +1,13 @@
+<?php 
+
+require("connect.php");
+
+$con = getConn();
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -55,8 +65,6 @@
                           }
                           //echo $_SESSION['email'];
 
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                             //Check for DB Connection
                             if(!$con){
@@ -125,9 +133,6 @@ function AddCategory($Restaurant_ID){
 }
 
 
-                
-                    $dbname = "starvelater";
-                    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                     //Check for DB Connection
                     if(!$con){

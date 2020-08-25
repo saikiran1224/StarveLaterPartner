@@ -1,3 +1,13 @@
+<?php 
+ob_start();
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -236,8 +246,6 @@ function SignUp(){
     }
 
 if($boolean){
-    $dbname = "starvelater";
-    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
     //Check for DB Connection
     if(!$con){
@@ -342,3 +350,6 @@ if($boolean){
         <script src="js/scripts.js"></script>
     </body>
 </html>
+<?php 
+ob_flush();
+?>

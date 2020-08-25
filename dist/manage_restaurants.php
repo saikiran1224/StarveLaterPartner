@@ -1,3 +1,13 @@
+<?php 
+
+require("connect.php");
+
+$con = getConn();
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,34 +37,7 @@
     
 <body class="sb-nav-fixed">
 
-        <?php 
-
-
-              $dbname = "starvelater";
-              $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
-
-               $rest_name = $_GET["restaurantname"];
-               $status = $_GET["status"];
-
-               if($status == 'delete') {
-        
-                    //echo "<script>alert('Successfully arrived here !' + '$rest_name');</script>";
-
-                           $sql = "DELETE from restaurants where Restaurant_Name = '$rest_name' ";
-
-
-                            $result = mysqli_query($GLOBALS['con'],$sql) or die("Error: " . mysqli_error($con));
-
-                            if($result) {
-                                echo "<script> swal('Successfull', 'Restaurant Deleted Successfully ', 'success'); </script>";
-                            } else {
-                                echo "<script> swal('Something Went Wrong !'); </script>";
-                            }  
-                           
-               }
-
-         ?> 
-
+       
             <!-- Top Navigation bar -->
             <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark"  style="background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);">
             <a class="navbar-brand" href="index.html">STARVE<B>LATER</B></a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button
@@ -85,7 +68,7 @@
                     <div class="sb-sidenav-menu" style="background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="admin.php?status=view"
+                            <a class="nav-link" href="admin.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard</a
                             >
@@ -98,7 +81,7 @@
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php?restaurantname=all&status=view">Manage Restaurants</a></nav>
+                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php">Manage Restaurants</a></nav>
                             </div>
 
                             <!-- Locations in Nav Bar --> 
@@ -205,10 +188,8 @@
                                                 <?php
                                                     //header("Access-Control-Allow-Origin: *");
                                                      //header("Content-Type: application/json; charset=UTF-8");
-                                                     $destin_location = "load_restaurant.php?restaurantname=";
+                                                     $destin_location = "load_restaurant.php";
                                                      
-                                                     $dbname = "starvelater";
-                                                     $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
 
                                                      //Check for DB Connection
                                                      if(!$con){
@@ -225,10 +206,11 @@
                                                        if(! $retval ) {
                                                           die('Could not get data: ' . mysqli_error());
                                                        }
+                                                         
                                                          while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
 
                                                             $response = array();
-                                                            $response['status'] = 'Data retrieved Successfully';
+                                                        $response['status'] = 'Data retrieved Successfully';
                                                             //$response['imgurl'] = $row['logoFileName'];
                                                             $response['res_ID'] = $row['Restaurant_ID'];
                                                             $response['restaurantName'] = $row['Restaurant_Name'];
@@ -240,9 +222,22 @@
                                                             array_push($res_array, $response);
 
                                                           echo "<tr>";
-                                                          echo "<td><img src='uploads/".$row['logoFileName']."' width='80px' height='75px'></img></td>";
-                                                          echo "<td>".$row['Restaurant_ID']."</td>";
-                                                          echo "<td><a href='".$destin_location.$row['Restaurant_Name']."'>".$row['Restaurant_Name']."</a></td>";
+                                                          echo "<td><img src='uploads/".$row['logoFileName']."' width='110px' height='75px'></img></td>";
+                                                          echo "<td>".$row['Restaurant_ID']."</td>"; 
+                                                         
+      echo  "<td><form method='POST' action='load_restaurant.php' id='testform'>
+                <input type='hidden' name='restaurantID' value=".$row['Restaurant_ID'].">
+            ";
+
+ echo "<input type='submit' value='".$row['Restaurant_Name']."' class='button bg-white text-primary border-0'></input></form></td>"; 
+
+     echo  "<script type='text/javascript'>
+            function test() {
+                  document.forms.testform.submit();
+            }
+        </script>";
+
+                                                        
                                                           echo "<td>".$row['fname']."</td> ";
                                                           echo "<td>".$row['Email_ID']."</td> ";
                                                           echo "<td>".$row['Phone']."</td> ";
@@ -253,13 +248,18 @@
                                                            //header_remove();
 
                                                        //header('Content-type: application/json');
-                                    echo "<input type='hidden' value=".json_encode($res_array)." name='resarray'>";
-
+                                                    
                                                        mysqli_close($GLOBALS["con"]);
                                                        http_response_code(200);
                                                        
                                                      }
+
+                                                
+
                                                 ?>
+
+
+                                                         
 
 
                                                 <!-- <td>1</td>
@@ -293,6 +293,9 @@
                 </footer>
             </div>
         </div>
+
+        
+
         <script src="/__/firebase/7.14.6/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use

@@ -10,8 +10,9 @@
 <?php
 
 //$db_handle = new DBController();
-	$dbname = "starvelater";
-    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
+	require("connect.php");
+	
+	$con = getConn();
     
     //Check for DB Connection
     if(!$con){

@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php session_start();
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -45,8 +52,6 @@
               
                           echo session_id(). " ". $_SESSION['email'];
 
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                             //Check for DB Connection
                             if(!$con){

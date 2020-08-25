@@ -1,3 +1,12 @@
+<?php
+
+ob_start();
+include("connect.php");
+
+$con = getConn();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,6 +30,27 @@
             color: white;
           }
         </style>
+
+          <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+          crossorigin="anonymous"></script>
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script>
+
+            function getCity(val) {
+                $.ajax({
+                type: "POST",
+                url: "get_state.php",
+                data:'State_ID='+val,
+                success: function(data){
+                    $("#inputCityArea").html(data);
+                }
+                });
+            }
+           
+            </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
@@ -30,6 +60,8 @@
 
         <?php
               $stateErr = $cityErr =  $onlyStateErr = "";
+
+              $stateAreaErr = $stateArea = $cityAreaErr = $cityArea = $areaNameErr = $areaName = "";
 
               $state = $city = $onlyState = "";
               $boolean = false;
@@ -59,30 +91,59 @@
                         }
                      }
 
-                    if(isset($_POST["AddCity"])) {
-                     //State Validation
-                    if ($_POST["state"] == 'Select State') {
-                    $stateErr = "State Name is required";
-                    $boolean = false;
-                  } else {
-                      $state = test_input($_POST["state"]);
-                      $boolean = true;
-                    }
+                    if(isset($_POST["AddCity"])) { 
+                         //State Validation
+                        if ($_POST["state"] == 'Select State') {
+                        $stateErr = "State Name is required";
+                        $boolean = false;
+                      } else {
+                          $state = test_input($_POST["state"]);
+                          $boolean = true;
+                        }
 
 
-                     //City Validation
-                    if (empty($_POST["CityName"])) {
-                    $cityErr = "City Name is required";
-                    $boolean = false;
-                  } else {
-                      $city = test_input($_POST["CityName"]);
-                      $boolean = true;
-                    }
+                         //City Validation
+                        if (empty($_POST["CityName"])) {
+                        $cityErr = "City Name is required";
+                        $boolean = false;
+                      } else {
+                          $city = test_input($_POST["CityName"]);
+                          $boolean = true;
+                        }
                 }
 
 
-                      
 
+                    if(isset($_POST["AddArea"])) {    
+
+                            //StateArea Validation
+                            if (empty($_POST["stateArea"])) {
+                            $stateAreaErr = "State Name is required";
+                            $boolean2 = false;
+                            } else {
+                              $stateArea = test_input($_POST["stateArea"]);
+                              $boolean2 = true;
+                            }
+
+                            //CityArea Validation
+                            if (empty($_POST["cityArea"])) {
+                            $cityAreaErr = "City Name is required";
+                            $boolean2 = false;
+                            } else {
+                              $cityArea = test_input($_POST["cityArea"]);
+                              $boolean2 = true;
+                            }
+                    
+                            //AreaName Validation
+                            if (empty($_POST["AreaName"])) {
+                            $areaNameErr = "Area Name is required";
+                            $boolean2 = false;
+                            } else {
+                              $areaName = test_input($_POST["CityName"]);
+                              $boolean2 = true;
+                            }
+                    
+                    }
 
 
 function addState(){
@@ -96,8 +157,11 @@ function addState(){
 
         if($result) {
             echo "<script> swal('Successfully added','State added Successfully','success'); </script>";
+            header('Location: ./add_location.php');
         } else {
             echo "<script> alert('Something Went Wrong !'); </script>";
+            header('Location: ./add_location.php');
+
         }
 }
 
@@ -125,17 +189,56 @@ function addCity(){
 
         if($result) {
             echo "<script> swal('Successfully added','City added Successfully','success'); </script>";
+            header('Location: ./add_location.php');
+
         } else {
             echo "<script> alert('Something Went Wrong !'); </script>";
+            header('Location: ./add_location.php');
+
         }
     }
 }
-                  
 
+
+function addArea(){
+
+        //Retrieving state ID from State Name
+        $stateID = $_POST["stateArea"];
+
+        $cityID = $_POST["cityArea"];
+
+        if($cityName != 'Select City' && $stateName != 'Select State') {
+
+        //Retreiving City ID and State ID from respective Tables
+        $stateIDquery = "SELECT * from state where State_ID = '$stateID'";
+        $cityIDquery = "SELECT * from city where City_ID = '$cityID'";
+
+        $result1 = mysqli_query($GLOBALS['con'],$stateIDquery) or die("Error: " . mysqli_error($con));
+        $result2 = mysqli_query($GLOBALS['con'],$cityIDquery) or die("Error: " . mysqli_error($con));
+        
+        $followingdataState = $result1->fetch_array(MYSQLI_ASSOC);
+        $followingdataCity = $result2->fetch_array(MYSQLI_ASSOC);
+
+        $areaID = uniqid();
+
+$sql = "INSERT into area VALUES ('$areaID','".$_POST["AreaName"]."','$cityID','".$followingdataCity['Name']."', '$stateID','".$followingdataState['Name']."');";
+
+        $result = mysqli_query($GLOBALS['con'],$sql) or die("Error: " . mysqli_error($con));
+
+        if($result) {
+            header('Location: ./add_location.php');
+            echo "<script> swal('Successfully added','Area added Successfully','success'); </script>";
+
+
+        } else {
+            echo "<script> alert('Something Went Wrong !'); </script>";
+            header('Location: ./add_location.php');
+
+        }
+    }
+}
                 
-                    $dbname = "starvelater";
-                    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
-    
+                   
                     //Check for DB Connection
                     if(!$con){
                         die("Connection Failed :" + mysqli_connect_error());
@@ -156,6 +259,14 @@ function addCity(){
                          }
                         mysqli_close($GLOBALS["con"]);
                         $boolean = false;
+                       }
+
+                        if(isset($_POST["AddArea"])){
+                         if($boolean2) {
+                             addArea(); 
+                         }
+                        mysqli_close($GLOBALS["con"]);
+                        $boolean2 = false;
                        }
 
                     }
@@ -194,7 +305,7 @@ function addCity(){
                     <div class="sb-sidenav-menu" style="background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="admin.php?status=view"
+                            <a class="nav-link" href="admin.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard</a
                             >
@@ -207,7 +318,7 @@ function addCity(){
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php?restaurantname=all&status=view">Manage Restaurants</a></nav>
+                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php">Manage Restaurants</a></nav>
                             </div>
 
                             <!-- Locations in Nav Bar --> 
@@ -282,7 +393,7 @@ function addCity(){
                         <h3 class="mt-4" style="margin-bottom: 15px;color: #fff;">Add State</h3>
                         
                         <!-- State Form  -->
-                        <form method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                        <form method="POST" enctype="multipart/form-data" action="" onSubmit="window.location.reload()" >
 
                                            <!-- State Name Input Field -->
                                             <div class="form-group"><label class="small mb-1" for="inputOnlyState" style="color: #fff;">Name of State</label><input class="form-control " id="inputOnlyState" name="onlystate" type="text" placeholder="Enter Name of the State" />
@@ -300,43 +411,41 @@ function addCity(){
                     <!-- Add City Form -->
                     <form method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
-                                           <!-- State Dropdown -->
-                                           <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="small mb-1" for="inputState" style="color: #fff;">Choose State</label><br>
-                                                        <select class="form-control" id="inputState" name="state" >
-                                                            <option>Select State</option>
-                                                         <?php
-                                                                    $dbname = "starvelater";
-                                                                    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
-    
-                                                                //Check for DB Connection
-                                                            if(!$con){
-                                                                die("Connection Failed :" + mysqli_connect_error());
-                                                            }else { 
-                                                         //Load Restaurant  Data  
-                                                                $sql = "SELECT Name FROM state";
-                                                    
-                                                                $retval = mysqli_query($GLOBALS['con'],$sql);
-                                                       
-                                                                   if(! $retval ) {
-                                                                      die('Could not get data: ' . mysqli_error());
-                                                                   }
-                                                                   
-                                                                   while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
-                                                                      echo "<option>".$row["Name"]."</option>";  
-                                                                   }
+                           <!-- State Dropdown -->
+                           <div class="form-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="small mb-1" for="inputState" style="color: #fff;">Choose State</label><br>
+                                        <select class="form-control" id="inputState" name="state" >
+                                            <option>Select State</option>
+                                         <?php
+                                                   
+                                                //Check for DB Connection
+                                            if(!$con){
+                                                die("Connection Failed :" + mysqli_connect_error());
+                                            }else { 
+                                         //Load Restaurant  Data  
+                                                $sql = "SELECT Name FROM state";
+                                    
+                                                $retval = mysqli_query($GLOBALS['con'],$sql);
+                                       
+                                                   if(! $retval ) {
+                                                      die('Could not get data: ' . mysqli_error());
+                                                   }
+                                                   
+                                                   while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
+                                                      echo "<option>".$row["Name"]."</option>";  
+                                                   }
 
-                                                                    mysqli_close($GLOBALS["con"]);
-                                                                 }
+                                                    //mysqli_close($GLOBALS["con"]);
+                                                 }
 
-                                                        ?>
+                                        ?>
 
-                                                        </select>
-                                                    </div>
-                                                    <span id="span" style="color: black;"><?php echo $stateErr; ?></span>
-                                                </div>
+                                        </select>
+                                    </div>
+                                    <span id="span" style="color: black;"><?php echo $stateErr; ?></span>
+                                </div>
 
                                                  <!-- City Input Field -->
                                                 <div class="col-md-6">
@@ -355,71 +464,78 @@ function addCity(){
                     </form>
 
 
-                    <?php 
-                        $dbname = "starvelater";
-                        $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
+                    <h3 class="mt-4" style="margin-bottom: 15px;color: white;" >Add Area</h3>
 
-                        $location_arr = array();
-                        //$location_arr['status'] = "Data retrieved Successfully !";
-                        $state_arr = array();
-                        $city_arr = array();
-                        //Check for DB Connection
-                        if(!$con){
-                                die("Connection Failed :" + mysqli_connect_error());
-                        }else { 
+<!-- 
+	CREATE TABLE area (Area_ID varchar(255) PRIMARY KEY,Name varchar(255), City_ID varchar(255), City_Name varchar(255), State_ID varchar(255), State_Name varchar(255), FOREIGN Key (City_ID) REFERENCES city(City_ID), FOREIGN KEY (State_ID) REFERENCES state(State_ID)) ENGINE INNODB; -->
 
-                            // State Data
-                            $sql = "select * from state";
+                    <!-- Add Area Form -->
+                    <form method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
-                            $state_result = mysqli_query($con,$sql);
-
-                            if($state_result) {
-
-                                while($row = mysqli_fetch_array($state_result,MYSQLI_ASSOC)) {
-                                   
-                                    $each_state = array();
-                                    $each_state['stateID'] = $row['State_ID'];
-                                    $each_state['stateName'] = $row['Name'];
-
-                                    array_push($state_arr, $each_state);
-                                }
-
-                                array_push($location_arr,$state_arr);
-
-                            }
-
-                            // State Data
-                            $sql1 = "select * from city";
-
-                            $city_result = mysqli_query($con,$sql1);
-
-                            if($city_result) {
-
-                                while($row = mysqli_fetch_array($city_result,MYSQLI_ASSOC)) {
-                                   
-                                    $each_city = array();
-                                    $each_city['cityID'] = $row['City_ID'];
-                                    $each_city['cityName'] = $row['Name'];
-                                    $each_city['stateID'] = $row['State_ID'];
-
-                                    array_push($city_arr, $each_city);
-                                }
-
-                                
-                                array_push($location_arr,$city_arr);
-
-                            }
-
-                            echo "<input type='hidden' value=".json_encode($location_arr)." name='locationarray'>";
-
+                            <!-- States Dropdown  -->
+                            <div class="form-group">
+                                 <label class="small mb-1" for="inputStateArea" style="color: #fff;">Choose State</label><br>
+                                <select class="form-control" id="inputStateArea" name="stateArea" onChange="getCity(this.value);">
+                                    
+                                    <option>Select State</option>
                                  
-                        }                              
+                                 <?php
+                                        
+                                        //Check for DB Connection
+                                    if(!$con){
+                                        die("Connection Failed :" + mysqli_connect_error());
+                                    }else { 
+                                 //Load State  Data  
+                                        $sql = "SELECT State_ID,Name FROM state";
+                            
+                                        $retval = mysqli_query($GLOBALS['con'],$sql);
+                               
+                                           if(! $retval ) {
+                                              die('Could not get data: ' . mysqli_error());
+                                           }
+                                           
+                                           while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
+                                              echo "<option value='".$row["State_ID"]."'>".$row["Name"]."</option>";  
+                                           }
+
+                                           // mysqli_close($GLOBALS["con"]);
+                                         }
+
+                                ?>
+
+                                </select>
+                               <span id="span" style="color: black;"><?php echo $stateAreaErr; ?></span> 
+                </div>
+
+                                           <!-- City Dropdown -->
+                                           <div class="form-row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="small mb-1" for="inputCityArea" style="color: #fff;">Choose City</label><br>
+                                                        <select class="form-control" id="inputCityArea" name="cityArea" >
+                                                            <option value="">Select City</option>
+                                                        </select>
+                                                    
+                                                    </div>
+                                                    <span id="span" style="color: black;"><?php echo $cityAreaErr; ?></span>
+                                                </div>
+
+                                                 <!-- Area Input Field -->
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="small mb-1" for="inputAreaName" style="color: #fff;">Name of Area</label><input class="form-control" id="inputAreaName" type="text" aria-describedby="emailHelp" placeholder="Enter Name of Area" name="AreaName" id="AreaName"/>
+                                           
+                                                    </div>
+                                                    <span id="span" style="color: red;"><?php echo $areaNameErr; ?></span>
+                                                </div>
+                                            </div>
+
+                                            <!-- Add Area Button -->
+                                            <div class="form-group mt-4 mb-0" align="center"  ><input style="width: 100px;" class="btn btn-primary" type="submit" name="AddArea" id="AddArea" value="Add Area"/></div>
+
+                    </form>
 
 
-
-
-
-                    ?>
 
 
 
@@ -487,3 +603,4 @@ function addCity(){
         <script src="assets/demo/datatables1-demo.js"></script>
     </body>
 </html>
+<?php ob_flush(); ?>

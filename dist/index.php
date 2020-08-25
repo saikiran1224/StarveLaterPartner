@@ -1,3 +1,14 @@
+<?php
+
+ob_start();
+
+
+require("connect.php");
+
+$con = getConn();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +17,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Restaurant STARVELATER</title>
+        <title>Restaurant Login | STARVELATER</title>
         <link rel='shortcut icon' href='assets/img/sample.png' type='image/x-icon' />
         <style type="text/css">
           .white-text {
@@ -119,6 +130,7 @@
                 $_SESSION['email'] = $_POST["emailid"];
                 $_SESSION['loggedIn'] = 'true';
                 header("Location: ./restaurant_home.php");
+                exit();
                 
             }
             
@@ -150,6 +162,8 @@
       if($boolean){
 
 
+
+
           $admin_email = "admin@gmail.com";
           $admin_pwd = "admin123";
        
@@ -157,22 +171,26 @@
           $password = $_POST["pwd"];
          
 
-        $dbname = "starvelater";
-        $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
-    
          //Check for DB Connection
+         
          if(!$con){
             die("Connection Failed :" + mysqli_connect_error());
          }else{
+        
             if(isset($_POST["login"])){
               
-               if (($admin_email == $email) && ($admin_pwd == $password)) {
-                    header("Location: ./admin.php?status=view");
-              } else {
-                SignIn($email,$password);
-                mysqli_close($GLOBALS["con"]);
-                $boolean = false;
-              }
+                   if (($admin_email == $email) && ($admin_pwd == $password)) {
+                       
+                      // echo "<script>alert('Admin Credentials !');</script>";
+                        header("Location: ./admin.php");
+                        exit();
+                        
+                  } else {
+                      
+                    SignIn($email,$password);
+                    mysqli_close($GLOBALS["con"]);
+                    $boolean = false;
+                  }
             }
          }
     
@@ -260,3 +278,4 @@
         <script src="js/scripts.js"></script>
     </body>
 </html>
+<?php ob_flush(); ?>

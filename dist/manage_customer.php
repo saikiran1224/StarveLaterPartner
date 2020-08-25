@@ -1,4 +1,14 @@
-roo<!DOCTYPE html>
+
+<?php 
+
+require("connect.php");
+
+$con = getConn();
+
+
+
+?>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -50,7 +60,7 @@ roo<!DOCTYPE html>
                     <div class="sb-sidenav-menu" style="background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="admin.php?status=view"
+                            <a class="nav-link" href="admin.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard</a
                             >
@@ -63,7 +73,7 @@ roo<!DOCTYPE html>
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php?restaurantname=all&status=view">Manage Restaurants</a></nav>
+                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php">Manage Restaurants</a></nav>
                             </div>
 
                             <!-- Locations in Nav Bar --> 
@@ -163,8 +173,6 @@ roo<!DOCTYPE html>
                                         
                                                 <?php
 
-                                                     $dbname = "starvelater";
-                                                     $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                                                      //Check for DB Connection
                                                      if(!$con){

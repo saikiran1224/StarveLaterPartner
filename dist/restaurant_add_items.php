@@ -1,3 +1,15 @@
+<?php 
+
+ob_start();
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -37,8 +49,6 @@
 
 
 
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
 
 
                              //Remove spaces, slashes and prevent XSS
@@ -62,7 +72,7 @@
                                                        
                                    // echo $followingdata['restaurantname'];
 
-                                    mysqli_close($GLOBALS["con"]);
+                                    //mysqli_close($GLOBALS["con"]);
                             }
 
 
@@ -168,8 +178,10 @@
 
                             if($result) {
                                 echo "<script> swal('Successfull', 'Item Added Successfully', 'success'); </script>";
+                                header('Location: restaurant_add_items.php');
                             } else {
                                 echo "<script> alert('Something Went Wrong !'); </script>";
+                                header('Location: restaurant_add_items.php');
                             }
                         }
                    }
@@ -177,8 +189,6 @@
                    
 
 
-                           $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
 
                         
                         //Check for DB Connection
@@ -193,7 +203,7 @@
                                 if($boolean) {
                                    insertData($resID,$resName);
                                 }
-                            mysqli_close($GLOBALS["con"]);
+                            //mysqli_close($GLOBALS["con"]);
                             $boolean = false;
                            }
 
@@ -346,7 +356,6 @@
                                                           <option>Select Category</option>
                                                             <?php
                                                               
-                                                              $con = mysqli_connect('localhost','saikirankkd1','Gmrit@224','starvelater');
 
                                                           $sql = "SELECT * from category where Restaurant_ID='".$followingdata['Restaurant_ID']."'";
 
@@ -440,3 +449,8 @@
         <script src="assets/demo/datatables-demo.js"></script>
     </body>
 </html>
+<?php 
+
+ob_flush();
+
+?>

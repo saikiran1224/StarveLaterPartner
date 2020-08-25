@@ -1,3 +1,14 @@
+<?php 
+
+ob_start();
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -38,8 +49,6 @@
 
 
 
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
 
 
                              //Remove spaces, slashes and prevent XSS
@@ -63,7 +72,7 @@
                                                        
                                    // echo $followingdata['restaurantname'];
 
-                                    mysqli_close($GLOBALS["con"]);
+                                    //mysqli_close($GLOBALS["con"]);
                             }
 
 
@@ -155,8 +164,6 @@
                     function updateData($resID){
 
                            
-                        
-
                             $sql = "UPDATE restaurants SET Restaurant_Name = '".$_POST["RestaurantName"]."',fname = '".$_POST["FirstName"]."',lname='".$_POST["LastName"]."',Phone = '".$_POST["RestaurantPhone"]."',SeatingCapacity='".$_POST["SeatingCapacity"]."',Address='".$_POST["RestaurantAddress"]."',AvgPrepTime = '".$_POST['AvgPrepTime']."' where Restaurant_ID='".$resID."' ";
 
 
@@ -164,16 +171,14 @@
 
                             if($result) {
                                 echo "<script> swal('Successfull', 'Details Updated Successfully', 'success'); </script>";
+                                header('Location: restaurant_home.php');
                             } else {
                                 echo "<script> alert('Something Went Wrong !'); </script>";
+                                header('Location: restaurant_home.php');
                             }
                     }
 
                    
-
-
-                           $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
 
                         
                         //Check for DB Connection
@@ -187,7 +192,7 @@
                                 if($boolean) {
                                    updateData($resID);
                                 }
-                            mysqli_close($GLOBALS["con"]);
+                           // mysqli_close($GLOBALS["con"]);
                             $boolean = false;
                            }
 
@@ -445,3 +450,4 @@
         <script src="assets/demo/datatables-demo.js"></script>
     </body>
 </html>
+<?php ob_flush(); ?>

@@ -1,3 +1,8 @@
+<?php session_start(); 
+
+require("connect.php");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,9 +33,12 @@
 
        <!-- Showing Restaurant Success Dialog  -->
       <?php 
-              $status = $_GET["status"];
+              $status = $_SESSION["registrationStatus"];
 
-              if($status == 'success') {
+              unset($_SESSION["registrationStatus"]);
+              session_destroy();
+
+              if($status == 'Success') {
                 echo "<script> swal('Registration Successfull', 'Restaurant Registered Successfully', 'success'); </script>";
               }
       ?>
@@ -66,7 +74,7 @@
 
                             <!-- Dashboard -->
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="admin.php?status=view"
+                            <a class="nav-link" href="admin.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard</a
                             >
@@ -79,7 +87,7 @@
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php?restaurantname=all&status=view">Manage Restaurants</a></nav>
+                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php">Manage Restaurants</a></nav>
                             </div>
 
                             <!-- Locations in Nav Bar --> 
@@ -232,9 +240,10 @@
 
                                                      $destin_location = "load_restaurant.php?restaurantname=";
                                                    
-                                                     $dbname = "starvelater";
-                                                     $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
+     
+                                                     $con = getConn();
+                                    
                                                      //Check for DB Connection
                                                      if(!$con){
                                                         die("Connection Failed :" + mysqli_connect_error());
@@ -261,7 +270,7 @@
                                                           echo "</tr>";
                                                        }
 
-                                                       mysqli_close($GLOBALS["con"]);
+                                                       mysqli_close($con);
                                                      }
 
                                                 ?>

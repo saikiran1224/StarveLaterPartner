@@ -1,3 +1,13 @@
+<?php session_start();
+
+ob_start();
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,7 +16,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Restaurant Registration | STARVELATER</title>
+        <title>Partner Registration | STARVELATER</title>
         <link rel='shortcut icon' href='assets/img/sample.png' type='image/x-icon' />
         <link href="css/styles.css" rel="stylesheet" />
 
@@ -64,6 +74,17 @@
                 }
                 });
             }
+
+            function getArea(val) {
+                $.ajax({
+                type: "POST",
+                url: "get_city.php",
+                data:'City_ID='+val,
+                success: function(data){
+                    $("#inputArea").html(data);
+                }
+                });
+            }
            
 </script>
 <script>
@@ -103,8 +124,8 @@
 //for files
 
 
-$fnameErr = $lnameErr =  $restaurantNameErr = $emailErr = $passwordErr = $conpasswordErr = $phoneErr = $stateErr = $cityErr = $gstInErr = $addressErr = "" ;
-$fname = $lname = $restaurantName = $email = $password = $conpassword = $phone = $state = $city = $gstIn = $address = "";
+$fnameErr = $lnameErr =  $restaurantNameErr = $emailErr = $passwordErr = $conpasswordErr = $phoneErr = $stateErr = $cityErr = $gstInErr = $addressErr = $restaurantKnownForErr  = $categoryErr = $areaErr = "" ;
+$fname = $lname = $restaurantName = $email = $password = $conpassword = $phone = $state = $city = $gstIn = $address = $restaurantKnownFor  = $category = $area = "";
 $boolean=false;
 
 //Remove spaces, slashes and prevent XSS
@@ -215,11 +236,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
         $boolean = true;
     }
 
-
-
-    
-
-
     //Address Validation
     if (empty($_POST["address"])) {
     $addressErr = "Address is required";
@@ -230,9 +246,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
     }
 
 
+     //Category Validation
+    if (empty($_POST["category"])) {
+    $categoryErr = "Category is required";
+    $boolean = false;
+  } else {
+      $category = test_input($_POST["category"]);
+      $boolean = true;
+    }
 
 
 
+    //Restaurant Known For Validation
+    if (empty($_POST["restaurantKnownFor"])) {
+    $restaurantKnownForErr = "Tag line is required";
+    $boolean = false;
+  } else {
+      $restaurantKnownFor = test_input($_POST["category"]);
+      $boolean = true;
+    }
+
+
+ //Address Validation
+    if (empty($_POST["address"])) {
+    $addressErr = "Address is required";
+    $boolean = false;
+  } else {
+      $address = test_input($_POST["address"]);
+      $boolean = true;
+    }
 
   //GST IN Validation
     if (empty($_POST["gstIn"])) {
@@ -242,10 +284,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
       $gstIn = test_input($_POST["gstIn"]);
       $boolean = true;
     }
-
-
-
- 
 
     //File Validation
 
@@ -289,6 +327,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
     } 
 
 
+  //Area Validation
+    if($_POST["area"] == 'Select Area') { 
+        $areaErr = "Please select a Area";
+        $boolean = false; 
+    }else {
+        $area = test_input($_POST["area"]);
+        $boolean = true;
+    } 
+
+
 //Length of Password
 /*function strlength($str)
 {
@@ -311,16 +359,11 @@ function NewUser($phone){
             $uploadOk = 1;
             $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-/*    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-              if($check !== false) {
-                echo "File is an image - " . $check["mime"] . ".";
-                $uploadOk = 1;
-              } else {
-                echo "File is not an image.";
-                $uploadOk = 0;
-              }*/
+            
+            $sql_area = "SELECT * from area where Area_ID='".$_POST["area"]."'";
+            $query_area = mysqli_query($GLOBALS['con'],$sql_area);
 
-            // Check if $uploadOk is set to 0 by an error
+            $area_row = mysqli_fetch_array($query_area,MYSQLI_ASSOC);
             
 
             if ($uploadOk == 0) {
@@ -345,14 +388,10 @@ function NewUser($phone){
 
        if(!empty($logoFileName)) {
 
-    $sql = "INSERT INTO restaurants Values ('$restaurantID','".$_POST["restaurantName"]."','".$_POST["email"]."','".$_POST["password"]."','".$_POST["phone"]."','0','".$_POST["fname"]."','".$_POST["lname"]."','".$_POST["address"]."','".$_POST["city"]."','".$_POST["state"]."','".$_POST["gstIn"]."','0','0','0','0','$logoFileName','Open','0','free','time')";
-
+    $sql = "INSERT INTO restaurants Values ('$restaurantID','Most Popular','".$_POST["category"]."','".$_POST["restaurantName"]."','".$_POST["restaurantKnownFor"]."','".$_POST["email"]."','".$_POST["password"]."','".$_POST["phone"]."','0','".$_POST["fname"]."','".$_POST["lname"]."','".$_POST["address"]."','".$area_row["Name"]."','".$area_row["City_Name"]."','".$area_row["State_Name"]."','".$_POST["gstIn"]."','0','0','0','0','$logoFileName','Open','0','free','time')";
 
         $query = mysqli_query($GLOBALS['con'], $sql);
-
-       
-
-
+        
         if($query) {
 
             /*// Authorisation details.
@@ -368,7 +407,7 @@ function NewUser($phone){
             $message = "Dear ".$_POST["fname"].", Thank you for registering under StarveLater. For any Technical Help, Please contact +91 86397 96138.";
             // 612 chars or less
             // A single number or a comma-seperated list of numbers
-            $message = urlencode($message);
+            
             $data = "username=".$username."&hash=".$hash."&message=".$message."&sender=".$sender."&numbers=".$numbers."&test=".$test;
             $ch = curl_init('http://api.textlocal.in/send/?');
             curl_setopt($ch, CURLOPT_POST, true);
@@ -377,10 +416,9 @@ function NewUser($phone){
             $result1 = curl_exec($ch); // This is the result from the API*/
             
      /*  if($result1) {*/
-        echo "<script>
-                    alert('Registered Successfully');
-        </script>";
-        header('Location: ./admin.php?status=success');
+        $_SESSION['registrationStatus'] = "Success"; 
+
+        header('Location: ./admin.php');
         } 
      /* }
 */        else {
@@ -407,8 +445,6 @@ function SignUp(){
     }
 
 if($boolean){
-    $dbname = "starvelater";
-    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
     //Check for DB Connection
     if(!$con){
@@ -437,7 +473,7 @@ if($boolean){
                         <div class="row justify-content-center">
                             <div class="col-lg-7">
                                 <div class="card shadow-lg border-0 rounded-lg mt-5">
-                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Restaurant Registration Form</h3></div>
+                                    <div class="card-header"><h3 class="text-center font-weight-light my-4">Partner Registration Form</h3></div>
                                     <div class="card-body">
                                         <form method="POST" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
@@ -455,9 +491,23 @@ if($boolean){
                                                 </div>
                                             </div>
 
+                                            <!-- Category -->
+                                            <div class="form-group"><label class="small mb-1" for="inputCategory">Category </label><select class="form-control" id="inputCategory" name="category">
+                                               <option value="Restaurant">Restaurant</option>
+                                               <option value="College Canteen">College Canteen</option>
+                                               <option value="Corporate Cafe">Corporate Cafe</option>
+                                            </select>
+                                                <span id="span"><?php echo $categoryErr; ?></span>
+                                            </div>
+
                                             <!-- Restaurant Name -->
-                                            <div class="form-group"><label class="small mb-1" for="inputRestaurantName">Name of Restaurant</label><input class="form-control py-4" id="inputRestaurantName" type="text" aria-describedby="emailHelp" placeholder="Enter Name of Restaurant" name="restaurantName" />
+                                            <div class="form-group"><label class="small mb-1" for="inputRestaurantName">Name of Partner</label><input class="form-control py-4" id="inputRestaurantName" type="text" aria-describedby="emailHelp" placeholder="Enter Name of Partner" name="restaurantName" />
                                                 <span id="span"><?php echo $restaurantNameErr; ?></span>
+                                            </div>
+
+                                            <!-- Restaurant Known For -->
+                                            <div class="form-group"><label class="small mb-1" for="inputRestaurantKnownFor">Partner Known For</label><input class="form-control py-4" id="inputRestaurantKnownFor" type="text" aria-describedby="emailHelp" placeholder="Enter Tag Line of Partner..." name="restaurantKnownFor" />
+                                                <span id="span"><?php echo $restaurantKnownForErr; ?></span>
                                             </div>
                                     
 
@@ -487,21 +537,18 @@ if($boolean){
 
 
                                             <!-- Address  -->
-                                            <div class="form-group"><label class="small mb-1" for="inputRestaurantAddress">Address</label><input class="form-control py-4" id="inputRestaurantAddress" type="text" aria-describedby="emailHelp" placeholder="Enter Restaurant address" name="address" />
+                                            <div class="form-group"><label class="small mb-1" for="inputRestaurantAddress">Address</label><input class="form-control py-4" id="inputRestaurantAddress" type="text" aria-describedby="emailHelp" placeholder="Enter Partner address" name="address" />
                                             <span id="span"><?php echo $addressErr; ?></span>
                                             </div>
 
 
                                             <!-- Location Section -->
-                                            <div class="form-row">
-                                                <div class="col-md-6">
-                                                    <div class="form-group">
-                                                        <label class="small mb-1" for="inputState">Choose State</label><br>
-                                                        <select class="form-control" id="inputState" name="state" onChange="getCity(this.value);" >
-                                        <option>Select State</option>
+
+                                            <!-- State Form -->
+                                            <div class="form-group"><label class="small mb-1" for="inputState">Select State</label>
+                                             <select class="form-control" id="inputState" name="state" onChange="getCity(this.value);" >
+                                               <option>Select State</option>
                                                               <?php
-                                                                    $dbname = "starvelater";
-                                                                    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                                                                 //Check for DB Connection
                                                             if(!$con){
@@ -524,18 +571,29 @@ if($boolean){
                                                                  }
 
                                                         ?>
-                                                        </select>
-                                                    </div>
-                                                    <span id="span"><?php echo $stateErr; ?></span>
-                                                </div>
+                                            </select>
+                                                <span id="span"><?php echo $stateErr; ?></span>
+                                            </div>
+
+                                            <!-- City and Area Form-->
+                                            <div class="form-row">
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label class="small mb-1" for="inputCity">Choose City</label><br>
-                                                        <select class="form-control" id="inputCity" name="city" >
-                                                            <option value="">Select City</option>
+                                                        <select class="form-control" id="inputCity" name="city" onChange="getArea(this.value);" >
+                                                          <option value="">Select City</option>
                                                         </select>
                                                     </div>
                                                     <span id="span"><?php echo $cityErr; ?></span>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label class="small mb-1" for="inputArea">Choose Area</label><br>
+                                                        <select class="form-control" id="inputArea" name="area" >
+                                                            <option value="">Select Area</option>
+                                                        </select>
+                                                    </div>
+                                                    <span id="span"><?php echo $areaErr; ?></span>
                                                 </div>
                                             </div>
 
@@ -606,3 +664,9 @@ if($boolean){
         
     </body>
 </html>
+
+<?php 
+
+ob_flush();
+
+?>

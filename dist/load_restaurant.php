@@ -1,3 +1,42 @@
+<?php 
+
+ob_start();
+    
+require("connect.php");
+
+$con = getConn();
+
+
+
+    $resID = $_POST['restaurantID'];
+
+    /*if($_SESSION['restaurantName'] == $_POST['restaurantID']) {
+          $resID = $_SESSION['restaurantName'];
+          unset($_SESSION['restaurantName']);
+          session_destroy();
+    } else {
+          $resID = $_POST['restaurantID'];
+    }*/
+    //Check for DB Connection
+    if(!$con){
+            die("Connection Failed :" + mysqli_connect_error());
+    }else { 
+                                 //Load Restaurant  Data  
+    $sql = "SELECT * FROM restaurants where Restaurant_ID = '$resID' ";
+                            
+            $retval = mysqli_query($GLOBALS['con'],$sql);
+
+            $followingdata = $retval->fetch_array(MYSQLI_ASSOC);
+
+           // echo "<script>alert('".$followingdata['Restaurant_ID']."');</script>";
+                               
+           // echo $followingdata['restaurantname'];
+
+            //mysqli_close($GLOBALS["con"]);
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +46,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <link rel='shortcut icon' href='assets/img/sample.png' type='image/x-icon' />
-        <title><?php echo $_GET['restaurantname']; ?> | StarveLater</title>
+        <title><?php echo $followingdata['Restaurant_Name']; ?> | StarveLater</title>
         <link href="css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
 
@@ -23,6 +62,8 @@
             color: white;
           }
         </style>
+
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -42,37 +83,26 @@
               $boolean = false;
 
 
-              $dbname = "starvelater";
-              $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
         
-
-
               //Retrieving Values from Database if they are already present
               $foodLi = $labourLi = $marginLi =  "";
 
-              $resname = $_GET["restaurantname"];
+              
 
 
-              $res = "SELECT FoodLicense, LabourLicense,Margin from restaurants where Restaurant_Name = '$resname'";
+             // $res = "SELECT * from restaurants where Restaurant_ID = '$resID'";
 
-               $result = mysqli_query($GLOBALS['con'],$res) or die("Error: " . mysqli_error($con));
-
-
-                if(! $result ) {
-                  die('Could not get data: ' . mysqli_error());
-                } 
-
-                while ($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-
-                   $foodLi = $row['FoodLicense'];
-                   $labourLi = $row['LabourLicense'];
-                   $marginLi = $row['Margin'];
-
-                }
+              // $result = mysqli_query($GLOBALS['con'],$res) or die("Error Licence : " . mysqli_error($con));
 
 
-               
+                
+                
+                $foodLi = $followingdata['FoodLicense'];
+                $labourLi = $followingdata['LabourLicense'];
+                $marginLi = $followingdata['Margin'];
 
+              
+               // $followingdata = mysqli_fetch_array($result,MYSQLI_ASSOC);
                 if($foodLi == '0' && $labourLi == '0') {
                     if($marginLi == '0') {
                       echo "<script>swal('Please update required fields for this Restaurant');</script>";
@@ -82,9 +112,6 @@
                     echo "<script>swal('Please update Margin Details for this Restaurant');</script>";
                 }
                 }
-
-
-
 
                 //Remove spaces, slashes and prevent XSS
                 function test_input($data) {
@@ -134,28 +161,29 @@
 
 
 
-                    function updateData(){
+                  function updateData(){
 
-                            $resname = $_GET["restaurantname"];
+                              $resname = $_POST["restaurantID"];
 
-                            $sql = "UPDATE restaurants SET FoodLicense = '".$_POST["FoodLicenceNumber"]."', LabourLicense = '".$_POST["LabourLicenceNumber"]."',Margin = '".$_POST["Margin"]."' where Restaurant_Name='".$_GET["restaurantname"]."' ";
+                      
+                            $sql = "UPDATE restaurants SET FoodLicense = '".$_POST["FoodLicenceNumber"]."', LabourLicense = '".$_POST["LabourLicenceNumber"]."',Margin = '".$_POST["Margin"]."' where Restaurant_ID='$resname' ";
 
 
-                            $result = mysqli_query($GLOBALS['con'],$sql) or die("Error: " . mysqli_error($con));
+                            $result = mysqli_query($GLOBALS['con'],$sql) or die("Error update: " . mysqli_error($con));
 
                             if($result) {
                                 echo "<script> swal('Successfull', 'Details Updated Successfully', 'success'); </script>";
+                                header('Location: manage_restaurants.php');
+
                             } else {
                                 echo "<script> alert('Something Went Wrong !'); </script>";
+                                header('Location: manage_restaurants.php');
                             }
                     }
 
-                   
-
-
                     
+                    $resname = $_POST["restaurantID"];
 
-                        
                         //Check for DB Connection
                         if(!$con){
                             die("Connection Failed :" + mysqli_connect_error());
@@ -175,7 +203,16 @@
                             })
                             .then((willDelete) => {
                               if (willDelete) { 
-                                window.location = 'manage_restaurants.php?restaurantname='+resname+'&status=delete';
+
+                                 $.ajax({
+                                   type: 'POST',
+                                   url: 'delete_restaurant.php',
+                                   data: 'resID='+resname,
+                                   success: function(data) {
+                                      window.location = 'manage_restaurants.php';
+                                   }
+                                  });
+
                               } else {
                                 //swal('Restaurant is safe!');
                               }
@@ -233,7 +270,7 @@
                     <div class="sb-sidenav-menu" style="background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="admin.php?status=view"
+                            <a class="nav-link" href="admin.php"
                                 ><div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard</a>
                             <div class="sb-sidenav-menu-heading">Interface</div>
@@ -245,7 +282,7 @@
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div
                             ></a>
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php?restaurantname=all&status=view">Manage Restaurants</a></nav>
+                                <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="register_restaurant.php">Register Restaurant</a><a class="nav-link" href="manage_restaurants.php">Manage Restaurants</a></nav>
                             </div>
 
                             <!-- Locations in Nav Bar --> 
@@ -308,17 +345,14 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4" style="color: white;"><?php echo $_GET['restaurantname']; ?></h1>
+                        <h1 class="mt-4" style="color: white;"><?php echo $followingdata['Restaurant_Name']; ?></h1>
 
                        <!--  Marquee -->
                         <ol class="breadcrumb mb-4" width="100%" style="background-color: #000;">
-                            <li class="breadcrumb-item active" width="100%" style="color: #fff;"><marquee>Welcome to <span><?php echo $_GET['restaurantname']; ?></span> Dashboard.</marquee></li>
+                            <li class="breadcrumb-item active" width="100%" style="color: #fff;"><marquee>Welcome to <span><?php echo $followingdata['Restaurant_Name']; ?></span> Dashboard.</marquee></li>
                         </ol>
 
-                        
-
-                        
-
+                      
                         <!-- Items Table -->
 
 <!-- Query for Table
@@ -372,32 +406,22 @@
 
                                                      
                                                      //define('MYSQL_ASSOC',MYSQLI_ASSOC);
-                                                     $dbname = "starvelater";
-                                                     $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                                                      //Check for DB Connection
                                                      if(!$con){
                                                         die("Connection Failed :" + mysqli_connect_error());
                                                      }else { 
                                                        
-                                                        //Getting Restaurant Name from URL
-                                                        $resName = $_GET['restaurantname'];
-
-                                                        $sql = "SELECT Restaurant_ID from restaurants where Restaurant_Name = '".$resname."'";
-
-                                                        $result = mysqli_query($GLOBALS['con'],$sql);
-                                                      
-                                                        $followingdata = $result->fetch_array(MYSQLI_ASSOC);
 
                                                         //Getting Restaurant ID Foreign Key in Items Table
-                                                        $restaurantID = $followingdata['Restaurant_ID'];
+                                                      
 
                                                          //Load Items Data using  Restaurant ID as Foreign Key
-                                                       $sql = "SELECT * FROM items where Restaurant_ID='".$restaurantID."' ";
+                                                       $sql = "SELECT * FROM items where Restaurant_ID= '$resID' ";
 
                                                        $restaurant_profile_arr =array();
                                                     
-                                                       $retval = mysqli_query($GLOBALS['con'],$sql);
+                                                       $retval = mysqli_query($con,$sql);
                                                        
                                                        if(! $retval ) {
                                                           die('Could not get data: ' . mysqli_error());
@@ -405,21 +429,8 @@
                                                        
                                                          while($row = mysqli_fetch_array($retval, MYSQLI_ASSOC)) {
 
-                                                          $item_data = array();
-                                                          $item_data['itemPhoto'] = $row['photoname'];
-                                                          $item_data['itemID'] = $row['item_id'];
-                                                          $item_data['itemName'] = $row['Name'];
-                                                          $item_data['itemType'] = $row['Type'];
-                                                          $item_data['itemCategory'] = $row['category'];
-                                                          $item_data['itemPrice'] = $row['price'];
-                                                          $item_data['itemAvailability'] = $row['availability'];
-
-                                                          array_push($restaurant_profile_arr, $item_data);
-
-
-
                                                           echo "<tr>";
-                                                          echo "<td><img src='itemphotos/".$resName."/".$row['photoname']."' width='110px' height='75px'></td>";
+                                                          echo "<td><img src='itemphotos/".$followingdata['Restaurant_Name']."/".$row['photoname']."' width='110px' height='75px'></td>";
                                                           echo "<td>".$row['item_id']."</td>";
                                                           echo "<td>".$row['Name']."</td>";
                                                           echo "<td>".$row['Type']."</td>";
@@ -430,8 +441,7 @@
                                                        }
 
 
-                                                      echo "<input type='hidden'  value=".json_encode($restaurant_profile_arr)."  name='restprofile'>";
-
+                                                    
                                                        mysqli_close($GLOBALS["con"]);
                                                      }
 
@@ -443,35 +453,7 @@
                             </div>
                         </div>
 
-                        <?php 
-
-
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
-    
-                            //Check for DB Connection
-                            if(!$con){
-                                    die("Connection Failed :" + mysqli_connect_error());
-                            }else { 
-                                                         //Load Restaurant  Data  
-                            $sql = "SELECT * FROM restaurants where Restaurant_Name = '".$_GET['restaurantname']."'";
-                                                    
-                                    $retval = mysqli_query($GLOBALS['con'],$sql);
-
-                                    $followingdata = $retval->fetch_array(MYSQLI_ASSOC);
-
-                                   // echo "<script>alert('".$followingdata['Restaurant_ID']."');</script>";
-                                                       
-                                   // echo $followingdata['restaurantname'];
-
-                                    mysqli_close($GLOBALS["con"]);
-                            }
-
-        
-
-
-                        ?>
-
+                        
                        <!-- One Week Back Orders -->
                     <div class="card mb-4">
                             <div class="card-header"><i class="fas fa-table mr-1"></i>Orders Received
@@ -480,7 +462,7 @@
                                 <div class="table-responsive">
                                       
                                    <table class="table table-bordered" id="dataTable2" width="100%" cellspacing="0" data-id="<?php 
-                                   echo $followingdata['Restaurant_ID']; ?>" data-margin="<?php echo $followingdata['Margin']; ?>">
+                                   echo $resID ; ?>" data-margin="<?php echo $followingdata['Margin']; ?>">
                                         <thead>
                                             <tr>
                                                 <th>Order_ID</th>  
@@ -599,15 +581,13 @@ var margin = $("#dataTable2").data('margin');
                         <hr>
 
                         <h2 class="mt-4" style="color: white;">Update Licence Details</h2>
-
-
-                    <!-- Referring Same URL after Submitting the Page -->
-                    <?php 
-                        $destin_url = "load_restaurant.php?restaurantname=".$_GET['restaurantname']."";
-                        ?>
-                         
+                    
+                        
                         <!-- Food Licence & Labour Licence -->
-                        <form method="POST" enctype="multipart/form-data" action="<?php echo $destin_url; ?>" style="margin-top: 50px;">
+                        <form method="POST" enctype="multipart/form-data" action="load_restaurant.php" style="margin-top: 50px;">
+
+                          <input type="hidden" name="restaurantID" value="<?php echo $resID; ?>">
+                        
                         <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-group"><label class="small mb-1" for="inputFoodLicence" style="color: white;">Food Licence No.</label><input class="form-control py-4" id="inputFoodLicence" type="text" value="<?php echo $foodLi; ?>"placeholder="Enter Food Licence No." name="FoodLicenceNumber" />
@@ -615,17 +595,12 @@ var margin = $("#dataTable2").data('margin');
                                 </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group"><label class="small mb-1" for="inputLabourLicence" style="color: white;">Labour Licence</label><input class="form-control py-4" id="inputLabourLicence" type="text" value="<?php echo $labourLi;?>" placeholder="Enter Labour Licence No." name="LabourLicenceNumber" />
+                                    <div class="form-group"><label class="small mb-1" for="inputLabourLicence" style="color: white;">Labour Licence</label><input class="form-control py-4" id="inputLabourLicence" type="text" value="<?php echo $labourLi; ?>" placeholder="Enter Labour Licence No." name="LabourLicenceNumber" />
                                     <span id="span" style="color: black;"><?php echo $LabourLicenceErr; ?></span>
                                     </div>
                                 </div>
                         </div>
-                    
-
-                    
-
-                       
-                       
+                  
                  <P>&nbsp;</P>
 
                   <hr>
@@ -634,9 +609,7 @@ var margin = $("#dataTable2").data('margin');
 
 
                     <!-- Referring Same URL after Submitting the Page -->
-                    <?php 
-                        $destin_url = "load_restaurant.php?restaurantname=".$_GET['restaurantname']."";
-                        ?>
+                  
                          
                         <!-- Margin Percentage Detail -->
                     
@@ -653,32 +626,27 @@ var margin = $("#dataTable2").data('margin');
                                 <div class="col-md-6">
                                             <div class="form-group mt-4 mb-0"><input class="btn btn-primary" type="submit" name="Update" id="btnupdate" value="Update" /></div>
                                 </div>
-                                <div class="col-md-6">
-                                            <div class="form-group mt-4 mb-0"><input class="btn btn-danger" type="submit" name="Delete" id="btndelete" value="Delete"/></div>
-                                </div>
+
+                                    <div class="col-md-6">
+                                          <div class="form-group"><input class="btn btn-danger" type="submit" name="Delete" id="btndelete" value="Delete"/></div>
+                                    </div> 
+                                
                         </div>
 
                     </form>
+             <!-- 
+               <form method="POST" enctype="multipart/form-data" action="manage_restaurants.php" style="margin-top: 50px;"> -->
 
-                       
-                       
+                    <!--  <input type="hidden" name="restaurantID" value="<?php echo $resID; ?>"> -->
+                        
+                
+                <!-- </form>    -->             
                  <P>&nbsp;</P>
-
-
-
-
-
-
-
                     </div>
                 </main>
 
-                 
-
-
-
-
-               <footer class="py-4 footer-dark mt-auto" style="background-color: #000;">
+              
+             <footer class="py-4 footer-dark mt-auto" style="background-color: #000;">
                     <div class="container-fluid">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="footer-text-color" style="color: #fff;">Copyright &copy; STARVE<span><b>LATER</b></span> 2020</div>
@@ -716,3 +684,8 @@ var margin = $("#dataTable2").data('margin');
         <script src="assets/demo/datatables1-demo.js"></script>
     </body>
 </html>
+
+<?php 
+
+ob_flush(); 
+?>

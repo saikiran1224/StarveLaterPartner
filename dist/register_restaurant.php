@@ -1,3 +1,12 @@
+<?php 
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -127,12 +136,7 @@ function setCookie(cname, cvalue, exdays) {
     <!-- <?php
                session_start();
                
-               if($_SESSION['loggedIn'] != 'true' ) {
-                   
-                   //echo "<script>swal('You are not Authorized to access the Page');</script>";
-                   header('Location: ./index.php');
-                   exit();
-               }
+               
                
                
                
@@ -236,8 +240,6 @@ function setCookie(cname, cvalue, exdays) {
           $password = $_POST["pwd"];
          
 
-        $dbname = "starvelater";
-        $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
          //Check for DB Connection
          if(!$con){

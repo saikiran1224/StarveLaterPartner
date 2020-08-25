@@ -1,3 +1,14 @@
+<?php
+
+ob_start(); 
+
+require("connect.php");
+
+$con = getConn();
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -41,8 +52,6 @@
                           session_start();
                           //echo $_SESSION['email'];
 
-                            $dbname = "starvelater";
-                            $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                             //Check for DB Connection
                             if(!$con){
@@ -57,7 +66,7 @@
                                                        
                                    // echo $followingdata['restaurantname'];
 
-                                    mysqli_close($GLOBALS["con"]);
+                                    //mysqli_close($GLOBALS["con"]);
                             }
 
         
@@ -105,6 +114,7 @@ function AddCategory($Restaurant_ID){
 
         if($result) {
             echo "<script> swal('Successfully added','Category added Successfully','success'); </script>";
+            header('Location: restaurant_manage_category.php');
         } else {
             echo "<script> alert('Something Went Wrong !'); </script>";
         }
@@ -112,8 +122,6 @@ function AddCategory($Restaurant_ID){
 
 
                 
-                    $dbname = "starvelater";
-                    $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                     //Check for DB Connection
                     if(!$con){
@@ -126,7 +134,7 @@ function AddCategory($Restaurant_ID){
                             if($boolean) {
                               AddCategory($Restaurant_ID); 
                            }
-                           mysqli_close($GLOBALS["con"]);
+                           //mysqli_close($GLOBALS["con"]);
                            $boolean = false;
                        }
 
@@ -300,8 +308,6 @@ function AddCategory($Restaurant_ID){
                                              
                                              <?php 
                                                    
-                                                   $dbname = "starvelater";
-                                                     $con = mysqli_connect("localhost","saikirankkd1","Gmrit@224",$dbname);
     
                                                      //Check for DB Connection
                                                      if(!$con){
@@ -557,3 +563,9 @@ function AddCategory($Restaurant_ID){
         <script src="assets/demo/datatables1-demo.js"></script>
     </body>
 </html>
+<?php 
+
+ob_flush();
+
+
+?>

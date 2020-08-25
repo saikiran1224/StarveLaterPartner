@@ -1,6 +1,10 @@
 <?php
 //fetch.php
-$connect = mysqli_connect("localhost", "saikirankkd1", "Gmrit@224", "starvelater");
+
+require("connect.php");
+
+$connect = getConn();
+
 //$columns = array('order_Id', 'item_ids', 'Restaurant_ID', 'Customer_ID', 'Order_Type','Order_Date','Order_Status','Net_Bill');
 if($_POST["is_date_search"] == "no") {
  $query_original = "SELECT * FROM orders GROUP BY order_Id HAVING Restaurant_ID='".$_POST['res_id']."' ";

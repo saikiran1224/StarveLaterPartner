@@ -1,7 +1,9 @@
 <?php 
 
- $con = mysqli_connect('localhost','saikirankkd1','Gmrit@224','starvelater');
- 
+require("connect.php");
+
+$con = getConn();
+
  
 
  	/*$price = $_POST['price'];

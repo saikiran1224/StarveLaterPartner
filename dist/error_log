@@ -207,3 +207,756 @@
 [13-Jul-2020 08:26:29 UTC] PHP Notice:  Undefined index: loggedIn in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 39
 [13-Jul-2020 08:26:44 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
 [13-Jul-2020 08:26:44 UTC] PHP Notice:  Undefined index: loggedIn in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 39
+[14-Jul-2020 06:19:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
+[14-Jul-2020 06:20:43 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
+[14-Jul-2020 06:21:55 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/kpgrltx35dd1/public_html/partner/logout_restaurant_status.php on line 13
+[14-Jul-2020 06:23:23 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
+[14-Jul-2020 06:24:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
+[14-Jul-2020 06:39:23 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[14-Jul-2020 06:39:23 UTC] PHP Notice:  Undefined variable: _SESSION in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 130
+[14-Jul-2020 06:39:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kpgrltx35dd1/public_html/partner/register_restaurant.php:1) in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 133
+[14-Jul-2020 06:39:31 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[14-Jul-2020 06:39:31 UTC] PHP Notice:  Undefined variable: _SESSION in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 130
+[14-Jul-2020 06:39:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/kpgrltx35dd1/public_html/partner/register_restaurant.php:1) in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 133
+[14-Jul-2020 06:40:20 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[14-Jul-2020 06:40:27 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[14-Jul-2020 06:42:56 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 399
+[14-Jul-2020 06:50:27 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[14-Jul-2020 06:52:21 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[14-Jul-2020 08:15:47 UTC] PHP Notice:  Undefined index: email in /home/kpgrltx35dd1/public_html/partner/restaurant_manage_items.php on line 61
+[14-Jul-2020 08:15:47 UTC] PHP Notice:  Undefined index: email in /home/kpgrltx35dd1/public_html/partner/restaurant_manage_items.php on line 365
+[14-Jul-2020 08:15:49 UTC] PHP Notice:  Undefined index: email in /home/kpgrltx35dd1/public_html/partner/restaurant_add_items.php on line 57
+[19-Jul-2020 12:45:56 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[28-Jul-2020 16:28:31 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[28-Jul-2020 17:18:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[28-Jul-2020 17:18:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[28-Jul-2020 17:20:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[28-Jul-2020 17:22:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 07:38:05 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 07:58:33 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 07:58:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 08:00:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 08:02:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 08:02:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 311
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 315
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 384
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 457
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 606
+[29-Jul-2020 08:02:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 638
+[29-Jul-2020 08:15:14 UTC] PHP Parse error:  syntax error, unexpected ''Restaurant_Name'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 313
+[29-Jul-2020 08:15:20 UTC] PHP Parse error:  syntax error, unexpected ''Restaurant_Name'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 313
+[29-Jul-2020 08:20:29 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:20:29 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:20:29 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:20:29 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:20:29 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:20:29 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:20:29 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:20:51 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:20:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:20:51 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:20:51 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:20:51 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:20:51 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:20:51 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:20:59 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:20:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:20:59 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:20:59 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:20:59 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:20:59 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:20:59 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:21:14 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:21:14 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:21:14 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:21:14 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:21:14 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:21:14 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:21:14 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:21:20 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:21:20 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:21:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:21:20 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:21:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:21:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:21:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:21:32 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:21:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:21:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:21:32 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:21:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:21:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:21:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:28:07 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:07 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:28:07 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:28:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:28:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:28:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:28:13 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:13 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:28:13 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:28:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:28:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:28:13 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:28:20 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:20 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:28:20 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:28:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:28:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:28:20 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:28:28 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:28 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:28:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:28:28 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:28:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:28:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:28:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:36:48 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:36:48 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:36:48 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:36:48 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:36:48 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:36:48 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:36:48 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:36:58 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:36:58 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:36:58 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:36:58 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:36:58 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:36:58 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:36:58 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:37:02 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:37:02 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:37:02 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:37:02 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:37:02 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:37:02 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:37:02 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:39:53 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:39:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:39:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:39:53 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:39:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:39:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:39:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:40:57 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:40:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:40:57 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:40:57 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:40:57 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:40:57 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:40:57 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:44:47 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:44:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:44:47 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:44:47 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:44:47 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:44:47 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:44:47 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:44:53 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:44:53 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:44:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:44:53 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:44:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:44:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:44:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:45:16 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:45:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:45:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:45:16 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:45:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:45:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:45:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:53:34 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:53:34 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:53:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:53:34 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:53:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:53:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:53:34 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:53:41 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:53:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:53:41 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:53:41 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:53:41 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:53:41 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:53:41 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:56:16 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:56:16 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:56:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:56:16 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:56:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:56:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:56:16 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:57:37 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:57:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:57:37 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:57:37 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:57:37 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:57:37 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:57:37 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 08:57:46 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:57:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 08:57:46 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 08:57:46 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 08:57:46 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 08:57:46 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 08:57:46 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 09:01:21 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:01:21 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:01:21 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 09:01:21 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 09:01:21 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 09:01:21 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 09:01:21 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 09:01:32 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:01:32 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:01:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 09:01:32 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 09:01:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 09:01:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 09:01:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 09:03:47 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 09:03:47 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 09:03:47 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:03:47 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:03:47 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 141
+[29-Jul-2020 09:03:47 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 143
+[29-Jul-2020 09:03:47 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 09:03:57 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 09:03:57 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 09:03:57 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:03:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:03:57 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 141
+[29-Jul-2020 09:03:57 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 143
+[29-Jul-2020 09:03:58 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 09:04:08 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:04:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be integer, string given in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 73
+[29-Jul-2020 09:04:08 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 386
+[29-Jul-2020 09:04:08 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 388
+[29-Jul-2020 09:04:08 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 459
+[29-Jul-2020 09:04:08 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 608
+[29-Jul-2020 09:04:08 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 640
+[29-Jul-2020 09:04:57 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:04:57 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 600
+[29-Jul-2020 09:04:57 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 632
+[29-Jul-2020 09:05:10 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:05:10 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:05:10 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:05:10 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:05:10 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 600
+[29-Jul-2020 09:05:10 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 632
+[29-Jul-2020 09:05:21 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:05:21 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 600
+[29-Jul-2020 09:05:21 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 632
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 141
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 143
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 313
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 317
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 387
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 451
+[29-Jul-2020 09:05:31 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 53
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 141
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 143
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 313
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 317
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 387
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 451
+[29-Jul-2020 09:05:42 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:05:56 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:05:56 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 600
+[29-Jul-2020 09:05:56 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 632
+[29-Jul-2020 09:07:07 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:07:07 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:07:07 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:07:07 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:07:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 600
+[29-Jul-2020 09:07:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 632
+[29-Jul-2020 09:14:09 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:14:09 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:14:09 UTC] PHP Notice:  Undefined variable: resName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 416
+[29-Jul-2020 09:14:09 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 477
+[29-Jul-2020 09:14:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 600
+[29-Jul-2020 09:14:09 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 632
+[29-Jul-2020 09:15:02 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 09:15:02 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 09:15:02 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 09:15:15 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 09:15:15 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 09:15:15 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 09:15:28 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 09:15:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 09:15:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 09:15:40 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 09:15:40 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 09:15:40 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 09:23:53 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 09:23:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 09:23:53 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 09:24:08 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 09:24:08 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 09:24:08 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 09:25:53 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 12
+[29-Jul-2020 09:25:53 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 80
+[29-Jul-2020 09:25:53 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 402
+[29-Jul-2020 09:25:53 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 10:29:03 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 10:29:03 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 10:29:03 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 10:58:40 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 10:58:40 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 10:58:40 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 11:01:12 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 11:01:12 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 11:01:12 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 11:01:20 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 12
+[29-Jul-2020 11:01:20 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 80
+[29-Jul-2020 11:01:20 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 185
+[29-Jul-2020 11:01:20 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 402
+[29-Jul-2020 11:01:20 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 11:01:38 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 11:01:38 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 11:01:38 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 11:05:08 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 12
+[29-Jul-2020 11:05:08 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 80
+[29-Jul-2020 11:05:08 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 402
+[29-Jul-2020 11:05:08 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 11:07:22 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 11:07:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 11:07:22 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 11:07:52 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 11:07:52 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 11:07:52 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 13:20:09 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 410
+[29-Jul-2020 13:23:13 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 442
+[29-Jul-2020 13:27:14 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 433
+[29-Jul-2020 13:29:16 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 13:31:12 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 13:34:19 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 13:40:43 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 13:41:02 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 13:41:52 UTC] PHP Notice:  Undefined index: state in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 85
+[29-Jul-2020 13:41:52 UTC] PHP Notice:  Undefined index: state in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 89
+[29-Jul-2020 13:41:52 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 13:42:08 UTC] PHP Notice:  Undefined index: state in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 85
+[29-Jul-2020 13:42:08 UTC] PHP Notice:  Undefined index: state in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 89
+[29-Jul-2020 13:42:08 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 13:42:17 UTC] PHP Notice:  Undefined index: state in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 85
+[29-Jul-2020 13:42:17 UTC] PHP Notice:  Undefined index: state in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 89
+[29-Jul-2020 13:42:17 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 15:45:21 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 438
+[29-Jul-2020 18:04:45 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 18:04:45 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 18:04:45 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 18:04:54 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:05:15 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:05:44 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:08:16 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:08:37 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:08:55 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:10:33 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:10:38 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:10:41 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:10:44 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:10:53 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 480
+[29-Jul-2020 18:57:43 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[29-Jul-2020 19:03:22 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[29-Jul-2020 19:04:07 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[29-Jul-2020 19:07:42 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 208
+[29-Jul-2020 19:07:44 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 208
+[29-Jul-2020 19:08:33 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[29-Jul-2020 19:11:49 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[29-Jul-2020 19:11:49 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[29-Jul-2020 19:11:49 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[29-Jul-2020 19:12:06 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[29-Jul-2020 19:12:06 UTC] PHP Notice:  Undefined variable: cityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[29-Jul-2020 19:12:06 UTC] PHP Notice:  Undefined variable: stateName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[29-Jul-2020 19:12:06 UTC] PHP Notice:  Undefined variable: stateName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 197
+[29-Jul-2020 19:12:06 UTC] PHP Notice:  Undefined variable: cityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 198
+[29-Jul-2020 19:17:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[29-Jul-2020 19:17:53 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[29-Jul-2020 19:17:53 UTC] PHP Notice:  Undefined variable: cityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[29-Jul-2020 19:17:53 UTC] PHP Notice:  Undefined variable: stateName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[30-Jul-2020 03:50:32 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 03:50:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 03:50:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[30-Jul-2020 03:50:42 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 03:50:42 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 03:50:42 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[30-Jul-2020 03:50:51 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 03:50:51 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 03:50:51 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[30-Jul-2020 03:50:58 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 03:50:58 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 03:50:58 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[30-Jul-2020 10:14:57 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[30-Jul-2020 10:34:24 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 465
+[30-Jul-2020 10:45:25 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 465
+[30-Jul-2020 10:45:33 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 465
+[30-Jul-2020 10:45:39 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[30-Jul-2020 10:45:53 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 465
+[30-Jul-2020 10:46:29 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 465
+[30-Jul-2020 10:52:45 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 474
+[30-Jul-2020 10:54:02 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 474
+[30-Jul-2020 10:54:46 UTC] PHP Notice:  Undefined variable: categoryErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 464
+[30-Jul-2020 10:54:46 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 474
+[30-Jul-2020 10:57:21 UTC] PHP Notice:  Undefined variable: categoryErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 464
+[30-Jul-2020 10:57:21 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 474
+[30-Jul-2020 11:15:22 UTC] PHP Notice:  Undefined variable: categoryErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 475
+[30-Jul-2020 11:15:22 UTC] PHP Notice:  Undefined variable: restaurantKnownForErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 485
+[30-Jul-2020 11:15:22 UTC] PHP Notice:  Undefined variable: areaErr in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 573
+[30-Jul-2020 11:45:51 UTC] PHP Notice:  Undefined index: category in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 255
+[30-Jul-2020 11:45:51 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[30-Jul-2020 11:45:51 UTC] PHP Notice:  Undefined variable: query_area in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 354
+[30-Jul-2020 11:45:51 UTC] PHP Warning:  mysqli_query(): Empty query in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 354
+[30-Jul-2020 11:45:51 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 356
+[30-Jul-2020 11:45:51 UTC] PHP Notice:  Undefined index: category in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 381
+[30-Jul-2020 11:50:00 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[30-Jul-2020 11:51:52 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[30-Jul-2020 11:51:52 UTC] PHP Notice:  Undefined variable: query_area in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 354
+[30-Jul-2020 11:51:52 UTC] PHP Warning:  mysqli_query(): Empty query in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 354
+[30-Jul-2020 11:51:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 356
+[30-Jul-2020 11:53:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[30-Jul-2020 11:54:56 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[30-Jul-2020 12:28:49 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[30-Jul-2020 12:32:36 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[30-Jul-2020 12:40:16 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[30-Jul-2020 12:40:16 UTC] PHP Notice:  Undefined variable: cityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[30-Jul-2020 12:40:16 UTC] PHP Notice:  Undefined variable: stateName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[30-Jul-2020 12:41:12 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[30-Jul-2020 12:41:12 UTC] PHP Notice:  Undefined variable: cityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[30-Jul-2020 12:41:12 UTC] PHP Notice:  Undefined variable: stateName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[30-Jul-2020 12:41:35 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 12:41:35 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 12:41:35 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[30-Jul-2020 12:42:00 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[30-Jul-2020 15:05:06 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 15:05:06 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 15:05:06 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[30-Jul-2020 16:00:31 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 16:00:31 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 16:00:31 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[30-Jul-2020 18:41:46 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[30-Jul-2020 18:41:46 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[30-Jul-2020 18:41:46 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[31-Jul-2020 06:02:48 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 06:03:07 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 06:03:10 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 06:04:47 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 06:08:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 06:09:23 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 06:09:32 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 12
+[31-Jul-2020 06:09:32 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 80
+[31-Jul-2020 06:09:32 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 402
+[31-Jul-2020 06:09:32 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[31-Jul-2020 06:09:45 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[31-Jul-2020 06:09:45 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[31-Jul-2020 06:09:45 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[31-Jul-2020 06:09:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 06:10:52 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[31-Jul-2020 06:10:52 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[31-Jul-2020 06:10:52 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[31-Jul-2020 06:11:00 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 464
+[31-Jul-2020 06:11:00 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 587
+[31-Jul-2020 06:11:00 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 619
+[31-Jul-2020 06:14:47 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 444
+[31-Jul-2020 06:14:47 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 567
+[31-Jul-2020 06:14:47 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 599
+[31-Jul-2020 06:15:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 12
+[31-Jul-2020 06:15:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 77
+[31-Jul-2020 06:15:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 158
+[31-Jul-2020 06:15:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 160
+[31-Jul-2020 06:15:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 396
+[31-Jul-2020 06:15:00 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 444
+[31-Jul-2020 06:17:04 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 444
+[31-Jul-2020 06:17:04 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 592
+[31-Jul-2020 06:17:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 12
+[31-Jul-2020 06:17:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 77
+[31-Jul-2020 06:17:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 158
+[31-Jul-2020 06:17:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 160
+[31-Jul-2020 06:17:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 396
+[31-Jul-2020 06:17:14 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 444
+[31-Jul-2020 06:17:14 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 592
+[31-Jul-2020 06:22:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 06:23:43 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 06:28:25 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 06:29:01 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 444
+[31-Jul-2020 06:39:35 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 06:40:09 UTC] PHP Notice:  Undefined index: restaurantName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 7
+[31-Jul-2020 06:40:09 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 449
+[31-Jul-2020 06:40:32 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 82
+[31-Jul-2020 06:40:32 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 163
+[31-Jul-2020 06:40:33 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 165
+[31-Jul-2020 06:40:33 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 401
+[31-Jul-2020 06:40:33 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 449
+[31-Jul-2020 06:40:33 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 569
+[31-Jul-2020 06:40:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[31-Jul-2020 06:40:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 82
+[31-Jul-2020 06:40:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 163
+[31-Jul-2020 06:40:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 165
+[31-Jul-2020 06:40:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 401
+[31-Jul-2020 06:40:42 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 449
+[31-Jul-2020 06:40:42 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 569
+[31-Jul-2020 06:40:48 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[31-Jul-2020 06:40:48 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 82
+[31-Jul-2020 06:40:48 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 401
+[31-Jul-2020 06:40:48 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 449
+[31-Jul-2020 06:40:48 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 569
+[31-Jul-2020 06:40:57 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 449
+[31-Jul-2020 06:41:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 82
+[31-Jul-2020 06:41:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 401
+[31-Jul-2020 06:41:14 UTC] PHP Notice:  Undefined index: RestaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 449
+[31-Jul-2020 06:41:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 569
+[31-Jul-2020 06:45:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 163
+[31-Jul-2020 06:45:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 165
+[31-Jul-2020 06:45:00 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 569
+[31-Jul-2020 06:45:07 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 10
+[31-Jul-2020 06:45:07 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 163
+[31-Jul-2020 06:45:07 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 165
+[31-Jul-2020 06:45:07 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 569
+[31-Jul-2020 06:49:49 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 06:49:55 UTC] PHP Notice:  Undefined index: restaurantName in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 7
+[31-Jul-2020 07:00:45 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 07:01:18 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 07:01:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 07:01:53 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 07:03:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 7
+[31-Jul-2020 07:03:14 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 170
+[31-Jul-2020 07:03:14 UTC] PHP Notice:  Undefined variable: resID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 172
+[31-Jul-2020 07:04:28 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 7
+[31-Jul-2020 07:04:28 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 170
+[31-Jul-2020 07:04:28 UTC] PHP Notice:  Undefined variable: resID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 172
+[31-Jul-2020 07:04:46 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 7
+[31-Jul-2020 07:04:46 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 170
+[31-Jul-2020 07:04:46 UTC] PHP Notice:  Undefined variable: resID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 172
+[31-Jul-2020 07:47:48 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 07:48:13 UTC] PHP Notice:  Undefined variable: resID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 185
+[31-Jul-2020 07:48:19 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 7
+[31-Jul-2020 07:48:19 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 9
+[31-Jul-2020 07:50:32 UTC] PHP Notice:  Undefined variable: resID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 172
+[31-Jul-2020 07:59:08 UTC] PHP Notice:  Undefined variable: resID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 172
+[31-Jul-2020 07:59:19 UTC] PHP Notice:  Undefined variable: resID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 172
+[31-Jul-2020 08:06:09 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 08:09:31 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 194
+[31-Jul-2020 08:19:11 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 08:19:11 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 08:19:25 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 08:19:25 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 08:19:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 08:19:32 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 14:50:35 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 15:06:25 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 15:07:36 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 15:07:41 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:07:41 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:08:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:08:07 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:10:45 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 15:10:49 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:10:49 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:11:19 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 194
+[31-Jul-2020 15:12:54 UTC] PHP Notice:  Undefined variable: resname in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 194
+[31-Jul-2020 15:21:04 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 15:21:07 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:21:07 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:21:51 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 15:21:58 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:21:58 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:24:19 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:24:19 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:24:32 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:24:32 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:24:36 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:24:37 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:25:03 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:25:03 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:38:21 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 15:38:28 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:38:28 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:38:46 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:38:46 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 15:40:01 UTC] PHP Notice:  Undefined index: restaurantname in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 36
+[31-Jul-2020 15:40:01 UTC] PHP Notice:  Undefined index: status in /home/kpgrltx35dd1/public_html/partner/manage_restaurants.php on line 37
+[31-Jul-2020 16:04:03 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 16:05:59 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 16:06:02 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 16:21:24 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 16:21:43 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 16:35:42 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 16:36:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 16:42:07 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 16:42:21 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 16:43:52 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 16:44:50 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[31-Jul-2020 16:44:50 UTC] PHP Notice:  Undefined variable: cityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[31-Jul-2020 16:44:50 UTC] PHP Notice:  Undefined variable: stateName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[31-Jul-2020 16:45:06 UTC] PHP Notice:  Undefined index: CityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 133
+[31-Jul-2020 16:45:06 UTC] PHP Notice:  Undefined variable: cityName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[31-Jul-2020 16:45:06 UTC] PHP Notice:  Undefined variable: stateName in /home/kpgrltx35dd1/public_html/partner/add_location.php on line 194
+[31-Jul-2020 16:45:56 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 16:47:41 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 16:49:59 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 16:52:42 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 17:03:38 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 17:03:56 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 17:07:57 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 19:12:14 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 19:12:33 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 19:17:56 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[31-Jul-2020 19:43:46 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[31-Jul-2020 19:43:50 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[31-Jul-2020 19:46:29 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 07:47:03 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 07:47:28 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 07:50:43 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 07:53:46 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 10:11:31 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 10:12:06 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:16:45 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:18:05 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:20:47 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:22:38 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:23:25 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:25:09 UTC] PHP Notice:  Undefined variable: con in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 429
+[01-Aug-2020 10:25:09 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 429
+[01-Aug-2020 10:26:21 UTC] PHP Notice:  Undefined variable: con in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 429
+[01-Aug-2020 10:26:21 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, null given in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 429
+[01-Aug-2020 10:26:49 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 10:28:05 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 10:28:19 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:37:53 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:38:25 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:43:09 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:46:27 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:49:39 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:50:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:52:51 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:53:07 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:56:31 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:57:09 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 10:57:51 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 10:59:40 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 11:31:15 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 11:35:59 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 11:37:36 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 11:42:02 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 11:42:58 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 11:43:22 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 11:51:43 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 12:00:38 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 12:03:40 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 12:08:32 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 12:09:54 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 12:11:34 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 15:44:35 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[01-Aug-2020 15:47:24 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[01-Aug-2020 17:08:18 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 17:23:46 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 17:37:38 UTC] PHP Notice:  Undefined index: restaurantID in /home/kpgrltx35dd1/public_html/partner/load_restaurant.php on line 8
+[01-Aug-2020 17:37:42 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[01-Aug-2020 17:44:00 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[02-Aug-2020 05:52:26 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[02-Aug-2020 06:00:20 UTC] PHP Notice:  Undefined variable: phone in /home/kpgrltx35dd1/public_html/partner/register_restaurant_details.php on line 432
+[02-Aug-2020 07:21:25 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[02-Aug-2020 09:15:03 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[02-Aug-2020 09:56:17 UTC] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/kpgrltx35dd1/public_html/partner/register_restaurant.php on line 128
+[03-Aug-2020 07:41:38 UTC] PHP Notice:  Undefined index: registrationStatus in /home/kpgrltx35dd1/public_html/partner/admin.php on line 32
+[03-Aug-2020 07:43:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
+[03-Aug-2020 07:45:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
+[03-Aug-2020 07:46:16 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/kpgrltx35dd1/public_html/partner/restaurant_home.php on line 38
+[03-Aug-2020 07:49:02 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/kpgrltx35dd1/public_html/partner/logout_restaurant_status.php on line 13
