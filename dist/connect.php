@@ -4,10 +4,10 @@
 
 	function getConn() {
 
-		$servername = "fdb28.awardspace.net";
-		$username = "3555583_starvelater";
-		$password = "Rajam@123456";
-		$dbname = "3555583_starvelater";
+		$servername = "johnny.heliohost.org";
+		$username = "saikiran_starvelater";
+		$password = "Gmrit@224";
+		$dbname = "saikiran_starvelater";
 
 		// Create connection
 		$conn = mysqli_connect($servername, $username, $password, $dbname);

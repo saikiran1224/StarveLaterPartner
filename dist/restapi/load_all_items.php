@@ -16,8 +16,7 @@ header('Content-type: application/json');
 
   $restaurantID = $data->restaurant_ID;
    
-  $sql = "SELECT * from items WHERE category IN 
-         (SELECT DISTINCT category from items where Restaurant_ID = '$restaurantID' )";
+  $sql = "SELECT * from items WHERE Restaurant_ID = '$restaurantID' ";
   $result = mysqli_query($conn,$sql);
 
   $name = "SELECT Restaurant_Name from restaurants where Restaurant_ID = '$restaurantID' ";
@@ -40,6 +39,11 @@ header('Content-type: application/json');
              $response['Item_Name'] = $row['Name'];
              $response['Type'] = $row['Type'];
              $response['Item_Price'] = $row['price'];
+             $response['Availability'] = $row['availability'];
+             $response['Discount'] = $row['Discount'];
+             $response['Final_Price'] = $row['Final_Price'];
+             $response['imgUrl'] = "http://starvelater.ml/itemphotos/".$rowName['Restaurant_Name']."/".$row['photoname'];
+             $response['Recommended'] = $row['Recommended'];
              array_push($res_array, $response);
 
          }

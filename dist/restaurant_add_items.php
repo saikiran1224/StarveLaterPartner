@@ -171,7 +171,7 @@ $con = getConn();
                            $itemID = uniqid();
 
                             $sql = "INSERT into items values('".$itemID."','".$resID."','".$_POST["ItemName"]."','".$_POST["Type"]."',
-                            '".$_POST["Category"]."','".$_POST["Price"]."','".$_POST["Availability"]."','0 %','".$_POST["Price"]."','".$logoFileName."')";
+                            '".$_POST["Category"]."','".$_POST["Price"]."','".$_POST["Availability"]."','0 %','".$_POST["Price"]."','".$logoFileName."', 'Yes')";
 
 
                             $result = mysqli_query($GLOBALS['con'],$sql) or die("Error: " . mysqli_error($con));

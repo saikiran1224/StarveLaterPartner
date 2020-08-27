@@ -18,10 +18,10 @@ header('Content-type: application/json');
 
   $city_name = $data->city;
   $area_name = $data->area;
-  $type = $data->type;
+ 
    
   $sql = "SELECT * from restaurants 
-         where City = '$city_name' and Area = '$area_name' and Type = '$type' ";
+         where City = '$city_name' and Area = '$area_name' ";
 
   $result = mysqli_query($conn,$sql);
           
